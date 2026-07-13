@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>简易展示页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            padding: 30px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 30px;
+        }
+        /* 展示卡片容器 */
+        .show-box {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        /* 单个展示卡片 */
+        .card {
+            width: 280px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ddd;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-text {
+            padding: 15px;
+        }
+        .card-text h3 {
+            color: #165DFF;
+            margin-bottom: 8px;
+        }
+        .card-text p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>物品简易展示平台</h1>
+        <div class="show-box">
+            <!-- 展示卡片1 -->
+            <div class="card">
+                <img src="https://picsum.photos/id/25/300/180" alt="展示图1">
+                <div class="card-text">
+                    <h3>展示项目一</h3>
+                    <p>这是第一个展示内容，用于基础页面演示，简洁美观。</p>
+                </div>
+            </div>
+            <!-- 展示卡片2 -->
+            <div class="card">
+                <img src="https://picsum.photos/id/30/300/180" alt="展示图2">
+                <div class="card-text">
+                    <h3>展示项目二</h3>
+                    <p>自适应卡片布局，电脑手机都能正常查看。</p>
+                </div>
+            </div>
+            <!-- 展示卡片3 -->
+            <div class="card">
+                <img src="https://picsum.photos/id/36/300/180" alt="展示图3">
+                <div class="card-text">
+                    <h3>展示项目三</h3>
+                    <p>内置CSS样式，无需额外引入文件，开箱即用。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
